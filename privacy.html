@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>개인정보 처리방침 — 팔자템</title>
+<meta name="description" content="팔자템(초록작업실)이 개인정보를 어떻게 받고, 쓰고, 보관하고, 지우는지 알려 드려요.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=IBM+Plex+Sans+KR:wght@300;400;500;600&display=swap">
+<style>
+:root {
+  --paper: #f2f4ed; --sheet: #fbfcf8; --wash: #e7ecdf; --ink: #16201a; --muted: #5b6960; --line: #d5dccf;
+  --forest: #1f4a36; --moss: #557a4d;
+  --gut: max(20px, env(safe-area-inset-left, 0px)); --gut-r: max(20px, env(safe-area-inset-right, 0px));
+  --display: 'Noto Serif KR', 'AppleMyungjo', 'Nanum Myeongjo', 'Batang', serif;
+  --body: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #0f1511; --sheet: #161e18; --wash: #141c16; --ink: #e6ece3; --muted: #9aab9d; --line: #2a372d;
+  --forest: #9fd0ad; --moss: #a9cc94; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --paper: #0f1511; --sheet: #161e18; --wash: #141c16; --ink: #e6ece3; --muted: #9aab9d; --line: #2a372d;
+  --forest: #9fd0ad; --moss: #a9cc94; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.75; word-break: keep-all; -webkit-text-size-adjust: 100%; }
+:focus-visible { outline: 2px solid var(--forest); outline-offset: 3px; }
+a { color: var(--forest); text-underline-offset: 3px; }
+.wrap { max-width: 760px; margin: 0 auto; padding-left: var(--gut); padding-right: var(--gut-r); }
+.mast { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding-block: 22px; border-bottom: 1px solid var(--line); }
+.mast .logo { font-family: var(--display); font-weight: 700; font-size: 20px; color: var(--ink); text-decoration: none; }
+.mast span { font-size: 13.5px; color: var(--muted); }
+main { padding-block: clamp(32px, 6vw, 56px) 64px; display: grid; gap: 36px; }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(26px, 5vw, 34px); line-height: 1.3; margin: 0 0 12px; text-wrap: balance; }
+.lead { margin: 0; color: var(--muted); }
+section { display: grid; gap: 12px; min-width: 0; }
+h2 { font-family: var(--display); font-weight: 600; font-size: 19px; line-height: 1.4; margin: 0; padding-top: 18px; border-top: 1px solid var(--ink); }
+h2 small { display: block; font-family: var(--body); font-size: 12.5px; font-weight: 600; letter-spacing: .12em; color: var(--moss); margin-bottom: 2px; }
+p { margin: 0; }
+p, li, dd { text-wrap: pretty; }
+ul { margin: 0; padding-left: 1.15em; display: grid; gap: 6px; }
+li::marker { color: var(--moss); }
+.tw { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; min-width: 540px; font-size: 14.5px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); }
+th { font-weight: 600; font-size: 13px; color: var(--muted); border-bottom-color: var(--ink); white-space: nowrap; }
+td:first-child { font-weight: 600; white-space: nowrap; }
+.cos { display: grid; gap: 14px; }
+.co { background: var(--sheet); border: 1px solid var(--line); padding: 16px 18px; min-width: 0; }
+.co h3 { margin: 0 0 8px; font-size: 16.5px; font-weight: 600; }
+.co dl { margin: 0; display: grid; grid-template-columns: 6.5em minmax(0, 1fr); gap: 6px 14px; font-size: 14.5px; }
+.co dt { color: var(--muted); }
+.co dd { margin: 0; overflow-wrap: anywhere; }
+.date { color: var(--muted); font-size: 14.5px; }
+footer { border-top: 1px solid var(--line); padding-block: 22px 40px; font-size: 13.5px; color: var(--muted); }
+@media (min-width: 720px) { .cos { grid-template-columns: 1fr 1fr; } }
+</style>
+</head>
+<body>
+<header class="wrap mast"><a class="logo" href="./">팔자템</a><span>개인정보 처리방침</span></header>
+<main class="wrap">
+  <div>
+    <h1>팔자템 개인정보 처리방침</h1>
+    <p class="lead">초록작업실(서비스 이름 팔자템, 아래 "팔자템")은 「개인정보 보호법」에 따라 이용하시는 분의 개인정보를 아래와 같이 다뤄요. 꼭 필요한 정보만 받아요.</p>
+  </div>
+
+  <section>
+    <h2><small>제1조</small>홈페이지에서는 받지 않아요</h2>
+    <ul>
+      <li>홈페이지의 사주 유형 테스트에 넣은 생년월일·태어난 시·성별은 <b>저장하지 않고 어디로도 보내지 않아요.</b> 계산은 보고 계신 기기 안에서만 해요.</li>
+      <li>친구에게 보내는 링크와 결과 카드에도 생년월일은 들어가지 않아요.</li>
+      <li>쿠키를 쓰지 않아요.</li>
+      <li>다만 페이지 파일은 GitHub에서, 글꼴 파일은 Google에서 받아 오기 때문에, 접속하실 때 접속 기록(IP 주소, 브라우저 종류 등)이 두 회사에 남을 수 있어요. 팔자템은 이 기록을 받거나 보지 않아요.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><small>제2조</small>받는 정보와 쓰는 곳</h2>
+    <p>맞춤 사주 보고서를 카카오톡으로 신청하실 때 아래 정보를 받아요.</p>
+    <div class="tw"><table>
+      <thead><tr><th>구분</th><th>받는 정보</th><th>쓰는 곳</th><th>받는 까닭</th></tr></thead>
+      <tbody>
+        <tr><td>꼭 받는 것</td><td>생년월일, 양력·음력(윤달 여부), 성별, 가장 답답한 고민 한 가지</td><td>맞춤 사주 보고서를 쓰고 보내는 일</td><td>신청하신 보고서를 써 드리는 데 필요해서</td></tr>
+        <tr><td>주시면 받는 것</td><td>태어난 시간, 사는 시·구, 피부톤(웜·쿨), 좋아하는 브랜드 이름, 팔자템을 알게 된 곳</td><td>보고서를 더 자세히 쓰고, 브랜드 궁합을 보는 일, 어디서 오셨는지 세는 일</td><td>신청하신 보고서를 써 드리는 데 필요해서</td></tr>
+        <tr><td>대화하면서<br>보이는 것</td><td>카카오톡 오픈채팅에서 쓰시는 이름(닉네임), 대화 내용</td><td>누구의 신청인지 가리고 답장을 보내는 일</td><td>신청하신 보고서를 보내 드리는 데 필요해서</td></tr>
+        <tr><td>유료 콘텐츠를<br>사실 때</td><td>입금자(예금주) 이름, 입금한 날과 금액, (환불할 때) 환불받을 계좌</td><td>입금 확인, 환불, 거래 기록 보관</td><td>계약을 지키는 데 필요하고 법에서 보관하라고 정해서</td></tr>
+      </tbody>
+    </table></div>
+    <ul>
+      <li>무료 신청에는 실명·전화번호·주소가 필요 없어요. 결제하시거나 환불받으실 때만 입금자 이름과 계좌를 받아요.</li>
+      <li><b>건강·질병, 종교, 정치 성향 같은 민감한 이야기는 적지 말아 주세요.</b> 적어 주셔도 보고서에 쓰지 않아요.</li>
+      <li><b>다른 분(가족·친구·연인)의 생년월일은 받지 않아요.</b> 그분이 직접 신청해 주셔야 해요.</li>
+      <li>만 14세 미만의 신청은 받지 않아요.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><small>제3조</small>보관 기간</h2>
+    <div class="tw"><table>
+      <thead><tr><th>정보</th><th>팔자템이 보관하는 기간</th></tr></thead>
+      <tbody>
+        <tr><td>신청할 때 주신 정보와<br>보고서 파일</td><td>보고서를 보내 드린 날부터 1년. 추가 질문에 답하기 위해서예요</td></tr>
+        <tr><td>유료 거래 기록</td><td>5년 (전자상거래법). 언제 얼마를 내고 무엇을 받았는지, 환불 기록이에요</td></tr>
+        <tr><td>불만이나 다툼을<br>처리한 기록</td><td>3년 (전자상거래법)</td></tr>
+        <tr><td>환불받을 계좌</td><td>환불을 마치면 바로 지워요</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2><small>제4조</small>지우는 방법</h2>
+    <ul>
+      <li>보관 기간이 끝나거나 지워 달라고 하시면, <b>팔자템이 가진 사본은 5일 안에 지워요</b>(파일과 기록, 휴지통까지). 지웠다는 답은 요청하신 날부터 10일 안에 드려요.</li>
+      <li>법에서 보관하라고 정한 거래 기록은 그 기간 동안 따로 보관한 뒤 지워요.</li>
+      <li>해외 서비스에 남은 정보는 팔자템이 지운 뒤에도 그 회사의 방침에 따라 얼마 동안 더 남아요(제5조의 "그쪽에 남는 기간").</li>
+      <li>카카오톡 대화방은 보관 기간이 끝나면 팔자템 쪽에서 나가요. 손님 화면에 남은 대화는 직접 지우실 수 있어요.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><small>제5조</small>해외 회사에 건네는 정보</h2>
+    <p>팔자템은 보고서를 쓰고 보관하는 데 아래 해외 회사의 서비스를 써요. 그래서 신청하실 때 주신 정보가 이 회사들로 건너가요. <b>이 일은 신청하실 때 카카오톡에서 따로 동의를 받은 뒤에만 해요.</b></p>
+    <div class="cos">
+      <div class="co">
+        <h3>Anthropic, PBC</h3>
+        <dl>
+          <dt>나라</dt><dd>미국(그 밖에 이 회사의 서버가 있는 나라)</dd>
+          <dt>건네는 정보</dt><dd>생년월일, 양력·음력, 태어난 시간, 성별, 고민 한 가지, (주셨다면) 사는 시·구, 피부톤, 좋아하는 브랜드 이름</dd>
+          <dt>하는 일</dt><dd>생성형 AI 서비스 Claude로 보고서 글의 초안을 만들어요. 이 회사는 서비스 운영과 안전 점검을 위해 입력된 내용을 일정 기간 보관해요</dd>
+          <dt>언제·어떻게</dt><dd>보고서를 쓸 때, 인터넷(암호화된 연결)으로</dd>
+          <dt>그쪽에 남는 기간</dt><dd>팔자템이 지운 뒤 30일 안에 지워져요. 그 회사의 이용 정책을 어긴 것으로 표시된 내용은 최대 2년 남을 수 있어요. 팔자템은 주신 정보가 모델 학습에 쓰이지 않도록 설정해 두었어요</dd>
+          <dt>연락처</dt><dd>privacy@anthropic.com · 국내대리인 앤트로픽코리아(유) 02-734-0940, anthropic_privacy@kimchang.com</dd>
+        </dl>
+      </div>
+      <div class="co">
+        <h3>Google LLC</h3>
+        <dl>
+          <dt>나라</dt><dd>미국(그 밖에 이 회사의 데이터센터가 있는 나라)</dd>
+          <dt>건네는 정보</dt><dd>Anthropic에 건네는 것과 같은 정보와 완성된 보고서 파일</dd>
+          <dt>하는 일</dt><dd>저장소 Google Drive에 보고서 파일을 보관해요</dd>
+          <dt>언제·어떻게</dt><dd>보고서를 쓰고 보관하는 동안, 인터넷(암호화된 연결)으로</dd>
+          <dt>그쪽에 남는 기간</dt><dd>팔자템이 지운 뒤 약 2개월, 백업에는 최대 6개월</dd>
+          <dt>연락처</dt><dd>googlekrsupport@google.com · 국내대리인 구글코리아(유) 02-722-7778</dd>
+        </dl>
+      </div>
+    </div>
+    <ul>
+      <li>닉네임, 입금자 이름, 계좌는 Claude에 넣지 않아요.</li>
+      <li><b>동의하지 않으셔도 돼요.</b> 다만 이 서비스 없이는 보고서를 써 드리기 어려워, 동의가 없으면 맞춤 보고서를 써 드리지 않고 받은 내용을 지워요. 동의하신 뒤에도 대화방이나 제9조의 연락처로 "동의 철회"라고 알려 주시면 그때부터 쓰지 않고 지워요. 홈페이지의 테스트는 정보를 받지 않으니 그대로 쓰실 수 있어요.</li>
+      <li>위 두 곳 말고는 개인정보를 다른 곳에 주거나 팔지 않아요. 수사기관이 법에 따른 절차로 요청한 경우는 예외예요.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><small>제6조</small>내 정보에 대한 권리</h2>
+    <ul>
+      <li>언제든 내 정보를 보여 달라, 고쳐 달라, 지워 달라, 그만 써 달라고 하실 수 있어요. 대리인을 통해서도 하실 수 있어요(위임장이 필요해요).</li>
+      <li>신청하신 카카오톡 대화방이나 제9조의 연락처로 말씀해 주세요. <b>본인 확인은 접수 번호와 생년월일로 해요.</b></li>
+      <li>요청하신 날부터 10일 안에 처리하고 결과를 알려 드려요. 들어 드릴 수 없는 경우에는 그 이유와 이의를 제기하는 방법을 알려 드려요.</li>
+      <li>신청은 언제든 취소하실 수 있어요. 취소하시면 주신 정보를 지워요.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><small>제7조</small>안전하게 지키는 방법</h2>
+    <ul>
+      <li>정보를 다루는 사람은 운영자 한 명이에요.</li>
+      <li>파일은 비밀번호와 2단계 인증으로 잠근 계정과 기기에만 보관해요.</li>
+      <li>파일 이름에 이름을 쓰지 않아요.</li>
+      <li>손님의 정보를 검색 서비스나 그림 만드는 서비스에 넣지 않아요.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><small>제8조</small>광고·안내 메시지</h2>
+    <ul>
+      <li>유료 콘텐츠 안내가 들어 있는 브랜드 궁합 맛보기는 받겠다고 하신 분께만 보내요.</li>
+      <li>그 밖의 새 상품 광고 메시지는 보내지 않아요.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><small>제9조</small>개인정보 보호책임자</h2>
+    <ul>
+      <li>담당: 팔자템 운영자</li>
+      <li>연락처: <a href="https://open.kakao.com/o/stAJeTWi" target="_blank" rel="noopener">카카오톡 오픈채팅</a></li>
+      <li>개인정보에 관한 문의, 불만, 피해 구제는 위 연락처로 알려 주세요.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><small>제10조</small>도움받을 수 있는 곳</h2>
+    <ul>
+      <li>개인정보침해신고센터 (국번 없이) 118 · privacy.kisa.or.kr</li>
+      <li>개인정보 분쟁조정위원회 1833-6972 · www.kopico.go.kr</li>
+      <li>대검찰청 1301 · 경찰청 182</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><small>제11조</small>바뀔 때</h2>
+    <ul>
+      <li>이 방침이 바뀌면 홈페이지에 바뀐 날과 바뀐 내용을 알리고, 바뀌기 전의 글도 볼 수 있게 해요.</li>
+    </ul>
+    <p class="date">시행일: 2026년 11월 27일 (판 번호 1)</p>
+  </section>
+</main>
+<footer class="wrap">© 팔자템(초록작업실) · <a href="./">처음으로</a></footer>
+</body>
+</html>
